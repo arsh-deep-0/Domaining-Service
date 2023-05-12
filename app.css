@@ -145,9 +145,12 @@ hr{
 /*responsive design*/
 
 @media (max-width:743px) {
-    .navbar .links , .navbar .login{
+    .navbar .links {
         display: none;
     }    
+    .navbar .login{
+        margin-right: 2rem;
+    }
     .toggle_btn{
         display: block;
         position: absolute;
@@ -314,13 +317,56 @@ hr{
     padding: 2%;
 }
 
-.domain-search-box{
-    background-color: #fff;
+
+.search-feature-box{
     display: flex;
+    justify-content: center;
+    background-color: yellow;
+    width: 100%;
     
 }
-.domain-results-box{
-    display: flex;
-    flex-direction: column;
-}
 
+.search-feature{
+    padding:2%;
+    display: flex;
+    background-color: blue;
+    width: 60%;
+    gap:50px;
+} /*its 3 child*/
+
+.domain-search-box{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+  
+    flex-wrap: wrap;
+    
+}
+    .top-text{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    .search-form{
+       background-color: green;
+       width: 80%;
+       display: flex;
+       gap: 20px;
+       justify-content: center;
+    }
+
+    .search-class{
+       display: flex;
+       background-color:  orange;
+       width: 80%;
+    }
+
+.search-logo{
+    background-color: black;
+     display: flex;
+     align-items: center;
+}      
+    .search-logo-image{
+        padding:2%;
+        height:100px;
+    }    
+  
