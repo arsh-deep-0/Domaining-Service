@@ -49,3 +49,23 @@ document.onclick=function(e){
 const countdown = ()=>{
 
 }
+
+const sharedhosting = document.getElementById("plan-1");
+const standardhosting = document.getElementById("plan-2");
+
+sharedhosting.addEventListener("click",changePlan);
+standardhosting.addEventListener("click",changePlan1);
+
+function changePlan(){
+    console.log("hi");
+    document.getElementById("tranding-2").style.display="none";
+    document.getElementById("tranding").style.display="block";
+
+}
+
+
+function changePlan1(){
+    document.getElementById("tranding").style.display="none";
+    document.getElementById("tranding-2").style.display="block";
+
+}
